@@ -1,0 +1,433 @@
+# ╔══════════════════════════════════╗
+# ║       ShopPlugin Config          ║
+# ╚══════════════════════════════════╝
+
+# Symbol shown before money amounts
+money-symbol: "$"
+
+# Starting balance for new players
+starting-balance: 500.0
+
+# ──────────────────────────────────
+# Shop Categories & Items
+# ──────────────────────────────────
+# Each category has:
+#   display-name: Name shown in the menu (&color codes supported)
+#   icon:         Material used as the category icon
+#   items:        List of items in this category
+#
+# Each item has:
+#   name:         Display name in the shop
+#   material:     Minecraft material name (must be exact)
+#   price:        Cost in money
+#   amount:       How many items the player receives
+
+categories:
+
+  # ── Blocks ──────────────────────────────────────────────────────
+  blocks:
+    display-name: "&8🪨 Blocks"
+    icon: STONE
+    items:
+      stone:
+        name: "&fStone"
+        material: STONE
+        price: 2.0
+        amount: 16
+      cobblestone:
+        name: "&7Cobblestone"
+        material: COBBLESTONE
+        price: 1.0
+        amount: 16
+      dirt:
+        name: "&6Dirt"
+        material: DIRT
+        price: 0.5
+        amount: 16
+      grass_block:
+        name: "&aGrass Block"
+        material: GRASS_BLOCK
+        price: 1.5
+        amount: 16
+      sand:
+        name: "&eSand"
+        material: SAND
+        price: 1.0
+        amount: 16
+      gravel:
+        name: "&8Gravel"
+        material: GRAVEL
+        price: 1.0
+        amount: 16
+      obsidian:
+        name: "&5Obsidian"
+        material: OBSIDIAN
+        price: 25.0
+        amount: 4
+      bricks:
+        name: "&cBricks"
+        material: BRICKS
+        price: 5.0
+        amount: 16
+      glass:
+        name: "&bGlass"
+        material: GLASS
+        price: 3.0
+        amount: 16
+      quartz_block:
+        name: "&fQuartz Block"
+        material: QUARTZ_BLOCK
+        price: 8.0
+        amount: 8
+
+  # ── Wood ────────────────────────────────────────────────────────
+  wood:
+    display-name: "&6🌲 Wood"
+    icon: OAK_LOG
+    items:
+      oak_log:
+        name: "&6Oak Log"
+        material: OAK_LOG
+        price: 2.0
+        amount: 8
+      birch_log:
+        name: "&fBirch Log"
+        material: BIRCH_LOG
+        price: 2.0
+        amount: 8
+      spruce_log:
+        name: "&8Spruce Log"
+        material: SPRUCE_LOG
+        price: 2.0
+        amount: 8
+      jungle_log:
+        name: "&2Jungle Log"
+        material: JUNGLE_LOG
+        price: 2.0
+        amount: 8
+      oak_planks:
+        name: "&6Oak Planks"
+        material: OAK_PLANKS
+        price: 1.0
+        amount: 16
+      spruce_planks:
+        name: "&8Spruce Planks"
+        material: SPRUCE_PLANKS
+        price: 1.0
+        amount: 16
+      oak_stairs:
+        name: "&6Oak Stairs"
+        material: OAK_STAIRS
+        price: 3.0
+        amount: 8
+      oak_slab:
+        name: "&6Oak Slab"
+        material: OAK_SLAB
+        price: 1.5
+        amount: 16
+
+  # ── Materials ───────────────────────────────────────────────────
+  materials:
+    display-name: "&b💎 Materials"
+    icon: DIAMOND
+    items:
+      iron_ingot:
+        name: "&7Iron Ingot"
+        material: IRON_INGOT
+        price: 10.0
+        amount: 4
+      gold_ingot:
+        name: "&eGold Ingot"
+        material: GOLD_INGOT
+        price: 15.0
+        amount: 4
+      diamond:
+        name: "&bDiamond"
+        material: DIAMOND
+        price: 50.0
+        amount: 1
+      emerald:
+        name: "&aEmerald"
+        material: EMERALD
+        price: 40.0
+        amount: 1
+      netherite_ingot:
+        name: "&4Netherite Ingot"
+        material: NETHERITE_INGOT
+        price: 200.0
+        amount: 1
+      redstone:
+        name: "&cRedstone"
+        material: REDSTONE
+        price: 3.0
+        amount: 8
+      lapis_lazuli:
+        name: "&9Lapis Lazuli"
+        material: LAPIS_LAZULI
+        price: 5.0
+        amount: 8
+      coal:
+        name: "&8Coal"
+        material: COAL
+        price: 1.0
+        amount: 8
+      string:
+        name: "&fString"
+        material: STRING
+        price: 2.0
+        amount: 8
+      leather:
+        name: "&6Leather"
+        material: LEATHER
+        price: 4.0
+        amount: 4
+
+  # ── Tools ───────────────────────────────────────────────────────
+  tools:
+    display-name: "&7🔧 Tools"
+    icon: IRON_PICKAXE
+    items:
+      wood_pickaxe:
+        name: "&6Wooden Pickaxe"
+        material: WOODEN_PICKAXE
+        price: 5.0
+        amount: 1
+      stone_pickaxe:
+        name: "&7Stone Pickaxe"
+        material: STONE_PICKAXE
+        price: 15.0
+        amount: 1
+      iron_pickaxe:
+        name: "&fIron Pickaxe"
+        material: IRON_PICKAXE
+        price: 40.0
+        amount: 1
+      diamond_pickaxe:
+        name: "&bDiamond Pickaxe"
+        material: DIAMOND_PICKAXE
+        price: 150.0
+        amount: 1
+      iron_axe:
+        name: "&fIron Axe"
+        material: IRON_AXE
+        price: 35.0
+        amount: 1
+      iron_shovel:
+        name: "&fIron Shovel"
+        material: IRON_SHOVEL
+        price: 20.0
+        amount: 1
+      iron_hoe:
+        name: "&fIron Hoe"
+        material: IRON_HOE
+        price: 15.0
+        amount: 1
+      flint_and_steel:
+        name: "&7Flint and Steel"
+        material: FLINT_AND_STEEL
+        price: 10.0
+        amount: 1
+      shears:
+        name: "&fShears"
+        material: SHEARS
+        price: 8.0
+        amount: 1
+      fishing_rod:
+        name: "&bFishing Rod"
+        material: FISHING_ROD
+        price: 10.0
+        amount: 1
+
+  # ── Weapons ─────────────────────────────────────────────────────
+  weapons:
+    display-name: "&c⚔️ Weapons"
+    icon: IRON_SWORD
+    items:
+      wood_sword:
+        name: "&6Wooden Sword"
+        material: WOODEN_SWORD
+        price: 5.0
+        amount: 1
+      stone_sword:
+        name: "&7Stone Sword"
+        material: STONE_SWORD
+        price: 20.0
+        amount: 1
+      iron_sword:
+        name: "&fIron Sword"
+        material: IRON_SWORD
+        price: 50.0
+        amount: 1
+      diamond_sword:
+        name: "&bDiamond Sword"
+        material: DIAMOND_SWORD
+        price: 180.0
+        amount: 1
+      bow:
+        name: "&6Bow"
+        material: BOW
+        price: 25.0
+        amount: 1
+      arrow:
+        name: "&fArrows"
+        material: ARROW
+        price: 5.0
+        amount: 16
+      crossbow:
+        name: "&fCrossbow"
+        material: CROSSBOW
+        price: 40.0
+        amount: 1
+      trident:
+        name: "&bTrident"
+        material: TRIDENT
+        price: 120.0
+        amount: 1
+
+  # ── Armor ───────────────────────────────────────────────────────
+  armor:
+    display-name: "&7🛡️ Armor"
+    icon: IRON_CHESTPLATE
+    items:
+      leather_helmet:
+        name: "&6Leather Helmet"
+        material: LEATHER_HELMET
+        price: 10.0
+        amount: 1
+      iron_helmet:
+        name: "&fIron Helmet"
+        material: IRON_HELMET
+        price: 40.0
+        amount: 1
+      diamond_helmet:
+        name: "&bDiamond Helmet"
+        material: DIAMOND_HELMET
+        price: 130.0
+        amount: 1
+      iron_chestplate:
+        name: "&fIron Chestplate"
+        material: IRON_CHESTPLATE
+        price: 60.0
+        amount: 1
+      diamond_chestplate:
+        name: "&bDiamond Chestplate"
+        material: DIAMOND_CHESTPLATE
+        price: 200.0
+        amount: 1
+      iron_leggings:
+        name: "&fIron Leggings"
+        material: IRON_LEGGINGS
+        price: 55.0
+        amount: 1
+      diamond_leggings:
+        name: "&bDiamond Leggings"
+        material: DIAMOND_LEGGINGS
+        price: 175.0
+        amount: 1
+      iron_boots:
+        name: "&fIron Boots"
+        material: IRON_BOOTS
+        price: 35.0
+        amount: 1
+      diamond_boots:
+        name: "&bDiamond Boots"
+        material: DIAMOND_BOOTS
+        price: 120.0
+        amount: 1
+      shield:
+        name: "&fShield"
+        material: SHIELD
+        price: 30.0
+        amount: 1
+
+  # ── Food ────────────────────────────────────────────────────────
+  food:
+    display-name: "&a🍎 Food"
+    icon: BREAD
+    items:
+      bread:
+        name: "&6Bread"
+        material: BREAD
+        price: 3.0
+        amount: 8
+      apple:
+        name: "&aApple"
+        material: APPLE
+        price: 2.0
+        amount: 8
+      cooked_beef:
+        name: "&cSteak"
+        material: COOKED_BEEF
+        price: 6.0
+        amount: 8
+      cooked_chicken:
+        name: "&eCooked Chicken"
+        material: COOKED_CHICKEN
+        price: 4.0
+        amount: 8
+      golden_apple:
+        name: "&6Golden Apple"
+        material: GOLDEN_APPLE
+        price: 40.0
+        amount: 1
+      cooked_porkchop:
+        name: "&fPorkchop"
+        material: COOKED_PORKCHOP
+        price: 5.0
+        amount: 8
+      carrot:
+        name: "&6Carrot"
+        material: CARROT
+        price: 2.0
+        amount: 8
+      potato:
+        name: "&eBaked Potato"
+        material: BAKED_POTATO
+        price: 2.0
+        amount: 8
+
+  # ── Farming ─────────────────────────────────────────────────────
+  farming:
+    display-name: "&2🌾 Farming"
+    icon: WHEAT_SEEDS
+    items:
+      wheat_seeds:
+        name: "&aWheat Seeds"
+        material: WHEAT_SEEDS
+        price: 1.0
+        amount: 16
+      wheat:
+        name: "&eWheat"
+        material: WHEAT
+        price: 2.0
+        amount: 16
+      carrot_seeds:
+        name: "&6Carrot"
+        material: CARROT
+        price: 1.5
+        amount: 8
+      potato_seeds:
+        name: "&ePotato"
+        material: POTATO
+        price: 1.5
+        amount: 8
+      melon_seeds:
+        name: "&aMelon Seeds"
+        material: MELON_SEEDS
+        price: 3.0
+        amount: 8
+      pumpkin_seeds:
+        name: "&6Pumpkin Seeds"
+        material: PUMPKIN_SEEDS
+        price: 3.0
+        amount: 8
+      bone_meal:
+        name: "&fBone Meal"
+        material: BONE_MEAL
+        price: 2.0
+        amount: 8
+      composter:
+        name: "&6Composter"
+        material: COMPOSTER
+        price: 5.0
+        amount: 1
